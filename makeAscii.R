@@ -46,7 +46,7 @@ plot(tt, legend.only=TRUE, col=classcolor,
      legend.args=list(text='Land Use Class', side=4, font=2, line=2.5, cex=0.8))
 grid()
 
-#Reclassify
+#Reclassify - based on Siewert & Kroszczynski, 2020
 v=c(rep(13, 9), 4, 13, 12, 12, 12, 14, 14, 14, 10, 14, 14, 14, 14, 4, 1, 5, 10, 7, 7, 7, 16, 16, 16, 16, 15, rep(11, 5), rep(21, 4), 17)
 u = c(1:44)
 r_mats = as.matrix(data.frame(u, v))
