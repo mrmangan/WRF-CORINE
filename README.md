@@ -6,11 +6,11 @@ a.	I used the reclassification scheme from Siewert and Kroszczynski, 2020
 2.	Convert the land use map to WGS84 in ascii format 
 a.	Note, may need to regrid the data before converting to ascii to ensure that the grid boxes are squares
 3.	Upload ascii file to the correct folder with the rest of the files
-4.	Edit file wpsingest.f90 with the correct names for the ascii file
+4.	Edit file _wpsingest.f90_ with the correct names for the ascii file
 5.	Compile: gfortran wpsingest.f90 write_geogrid.o
 6.	Run file: ./a.out
 7.	Copy the file created to the correct folder with the index file
-8.	Edit the new GEOGID.TBL.AWS table to update the path for the priority LU values
+8.	Edit the new_ GEOGID.TBL.AWS_ table to update the path for the priority LU values
 9.	Copy that into the WPS/GEOGRID
 10.	Ls -sh GEOGRID.TBL.AWS GEOGRID.TBL
 11.	Run ./geogrid.exe
